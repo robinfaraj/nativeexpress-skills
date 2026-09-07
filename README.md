@@ -12,7 +12,9 @@ npx skills add robinfaraj/nativeexpress-skills -g --copy -y
 Then, in an empty folder, tell your coding agent:
 
 ```text
-Create a new NativeExpress app called my-app, then set it up.
+Create a new NativeExpress app called my-app, then set it up. Start with the
+setup skill's discovery phase: interview me, write PRODUCT.md, then continue
+through the tiers.
 ```
 
 `-g` installs for every coding agent on your machine, so it works before any project
@@ -41,7 +43,8 @@ The boilerplate ships its own skills, already on disk:
 
 | Skill | Does |
 |---|---|
-| `setup` | Configures every integration, tier by tier, verifying each |
+| `setup` | Interviews you, writes the product brief, then configures every integration, tier by tier, verifying each |
+| `design` | Gives the app its own look: theme from brand colours, fonts, icon and splash from a logo |
 | `conventions` | The codebase's conventions, for writing or reviewing code |
 | `uniwind` | Uniwind (Tailwind v4 for React Native) styling |
 | `heroui-native` | The HeroUI Native component library |

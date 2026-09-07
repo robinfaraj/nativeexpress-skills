@@ -1,7 +1,7 @@
 ---
 name: nativeexpress
 description: Scaffold a new NativeExpress React Native app and configure it end to end. Use when the user wants to start a new mobile app, create a NativeExpress project, "make me an iOS app", "build a React Native app", "scaffold NativeExpress", or asks to set up NativeExpress before the repository exists on disk. Hands off to the repo's bundled setup skill once the clone lands.
-compatibility: Requires node 20+, git and network access. A NativeExpress licence and GitHub access to the boilerplate repository are needed for the clone to succeed.
+compatibility: Requires node 22+, git and network access. A NativeExpress licence and GitHub access to the boilerplate repository are needed for the clone to succeed.
 license: Proprietary — NativeExpress.
 ---
 
@@ -23,42 +23,28 @@ Ask for the app name if the user has not given one, then:
 npx nativeexpress@latest create-app <app-name>
 ```
 
-The scaffolder prompts for app name, slug, bundle identifier, scheme and — optionally —
-Supabase URL and anon key. Pass what the user has already told you as flags so they are
-not asked twice:
-
-```bash
-npx nativeexpress@latest create-app my-app \
-  --slug my-app \
-  --ios-bundle-identifier com.acme.myapp \
-  --android-package-name com.acme.myapp \
-  --scheme myapp
-```
+The scaffolder asks two things: the app name and the Expo account username that will
+own the project. It derives the slug, URL scheme, iOS bundle identifier and Android
+package name from those, shows them once to confirm or correct, and optionally takes
+a Supabase URL and anon key. Do not ask the user for identifiers yourself; the
+scaffolder and the project's `setup` skill share one set of derivation rules, and
+`create-app --help` lists the flags that pin a value for a scripted run.
 
 Add `--ssh` if the user's GitHub access is SSH-only. **If the clone fails with an
-authentication error, retry once with `--ssh` before reporting a problem** — HTTPS
+authentication error, retry once with `--ssh` before reporting a problem.** HTTPS
 versus SSH is the single most common failure here.
 
 ## After the clone
 
-```bash
-cd <app-name>
-yarn install
-```
-
-The repository now contains its own skills at `.claude/skills/` and `.agents/skills/`.
-
-**Load the `setup` skill from the new project and follow it.** It handles app identity,
-the Supabase project and migrations, the OpenRouter key behind chat, and the optional
-payments, push, analytics and sign-in tiers — each with a verification step. Start it
-the way it asks:
-
-```bash
-node .claude/skills/setup/scripts/doctor.mjs
-```
+The scaffolder ends by printing what to do next. Follow it exactly: `cd` into the
+project, `yarn install`, then load the project's own `setup` skill from
+`.claude/skills/setup/` or `.agents/skills/setup/` and start with its discovery
+phase, which interviews the user, writes `PRODUCT.md`, and continues through the
+tiers. That skill is versioned with the code it edits and is always newer than this
+file.
 
 If the agent in use reads neither `.claude/skills/` nor `.agents/skills/`, run
-`yarn skills:install` inside the project first — it copies the skills into whichever
+`yarn skills:install` inside the project first. It copies the skills into whichever
 directory that agent does read.
 
 ## Do not
