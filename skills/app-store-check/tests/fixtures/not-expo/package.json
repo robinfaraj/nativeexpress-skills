@@ -1,0 +1,6 @@
+{
+  "name": "not-expo",
+  "dependencies": {
+    "express": "*"
+  }
+}

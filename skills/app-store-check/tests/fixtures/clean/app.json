@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "Clean",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Pick a photo from your library to use as your profile picture.",
+          "cameraPermission": "Take a photo with the camera to use as your profile picture.",
+          "microphonePermission": false
+        }
+      ]
+    ]
+  }
+}

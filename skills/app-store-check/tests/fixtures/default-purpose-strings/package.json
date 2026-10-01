@@ -1,0 +1,8 @@
+{
+  "name": "default-purpose-strings",
+  "dependencies": {
+    "expo": "*",
+    "react-native": "*",
+    "expo-camera": "*"
+  }
+}

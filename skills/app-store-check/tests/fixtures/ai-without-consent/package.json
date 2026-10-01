@@ -1,0 +1,8 @@
+{
+  "name": "ai-without-consent",
+  "dependencies": {
+    "expo": "*",
+    "react-native": "*",
+    "openai": "*"
+  }
+}

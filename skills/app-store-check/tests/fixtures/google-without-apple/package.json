@@ -1,0 +1,8 @@
+{
+  "name": "google-without-apple",
+  "dependencies": {
+    "expo": "*",
+    "react-native": "*",
+    "@react-native-google-signin/google-signin": "*"
+  }
+}
