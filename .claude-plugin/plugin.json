@@ -1,0 +1,14 @@
+{
+  "name": "nativeexpress",
+  "version": "1.0.0",
+  "description": "Find what will get an Expo or React Native app rejected by App Store review, before you submit.",
+  "author": {
+    "name": "NativeExpress",
+    "url": "https://native.express"
+  },
+  "homepage": "https://native.express",
+  "repository": "https://github.com/robinfaraj/nativeexpress-skills",
+  "license": "MIT",
+  "keywords": ["expo", "react-native", "app-store", "app-review", "ios", "mobile"],
+  "skills": "./skills/"
+}

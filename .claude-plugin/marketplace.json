@@ -1,0 +1,16 @@
+{
+  "name": "nativeexpress",
+  "description": "Agent skills from NativeExpress for Expo and React Native apps.",
+  "owner": {
+    "name": "NativeExpress",
+    "url": "https://native.express"
+  },
+  "plugins": [
+    {
+      "name": "nativeexpress",
+      "source": "./",
+      "description": "Find what will get an Expo or React Native app rejected by App Store review, before you submit.",
+      "category": "development"
+    }
+  ]
+}
