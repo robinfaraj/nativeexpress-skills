@@ -1,0 +1,7 @@
+{
+  "name": "placeholder",
+  "dependencies": {
+    "expo": "*",
+    "react-native": "*"
+  }
+}

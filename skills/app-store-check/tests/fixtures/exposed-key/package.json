@@ -1,0 +1,8 @@
+{
+  "name": "exposed-key",
+  "dependencies": {
+    "expo": "*",
+    "react-native": "*",
+    "openai": "*"
+  }
+}

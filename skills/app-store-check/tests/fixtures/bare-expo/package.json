@@ -1,0 +1,7 @@
+{
+  "name": "bare-expo",
+  "dependencies": {
+    "expo": "*",
+    "react-native": "*"
+  }
+}

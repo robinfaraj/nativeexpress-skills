@@ -1,0 +1,8 @@
+{
+  "name": "no-account-deletion",
+  "dependencies": {
+    "expo": "*",
+    "react-native": "*",
+    "@supabase/supabase-js": "*"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "no-restore",
+  "dependencies": {
+    "expo": "*",
+    "react-native": "*",
+    "react-native-purchases": "*"
+  }
+}

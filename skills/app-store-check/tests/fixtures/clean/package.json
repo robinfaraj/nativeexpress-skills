@@ -1,0 +1,13 @@
+{
+  "name": "clean",
+  "dependencies": {
+    "expo": "*",
+    "react-native": "*",
+    "@supabase/supabase-js": "*",
+    "@react-native-google-signin/google-signin": "*",
+    "expo-apple-authentication": "*",
+    "react-native-purchases": "*",
+    "expo-image-picker": "*",
+    "openai": "*"
+  }
+}
