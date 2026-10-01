@@ -21,8 +21,8 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "App Store Ready by NativeExpress",
-    "shortDescription": "Check an Expo or React Native app against App Store review before submitting",
+    "displayName": "NativeExpress App Store Check",
+    "shortDescription": "Catch App Store rejections",
     "longDescription": "Scans any Expo or React Native repo for the App Review Guidelines that most often reject apps: account deletion (5.1.1(v)), Sign in with Apple (4.8), restore purchases (3.1.1), subscription disclosure (3.1.2(c)), consent before sending data to third-party AI (5.1.2(i)), permission purpose strings (5.1.1(ii)) and placeholder content (2.1(a)), plus AI keys shipped in the app bundle. The agent then reads every flagged file to confirm the finding and reports what blocks review, what is likely to be flagged, and how to fix each one.",
     "developerName": "NativeExpress",
     "category": "Developer Tools",
@@ -33,6 +33,9 @@
     "privacyPolicyURL": "https://www.native.express/legal/privacy-policy",
     "termsOfServiceURL": "https://www.native.express/legal/terms",
     "defaultPrompt": "Use $app-store-check to find what will get my Expo app rejected by App Store review.",
-    "brandColor": "#151515"
+    "brandColor": "#151515",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
+    "supportURL": "https://github.com/robinfaraj/nativeexpress-skills/issues"
   }
 }
